@@ -29,7 +29,6 @@ a, a:hover {
 }
 
 nav {
-    border: 2px solid red;
     color: #636363;
     display: flex;
     justify-content: space-between;
@@ -42,4 +41,3 @@ nav {
     margin: 0 auto;
 }
 
-/*23 e 30*/

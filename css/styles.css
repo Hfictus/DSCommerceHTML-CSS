@@ -19,7 +19,6 @@
     --dsc-color-font-tertiary: #fff;
 }
 
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -30,6 +29,11 @@
 html, body {
     background-color: var(--dsc-color-bg-primary);
 }
+
+main {
+    padding: 20px;
+}
+
 
 /*-------------------------------------------------------*/
 /*generic styles*/
@@ -53,6 +57,7 @@ header {
     height: 70px;
     display: flex;
     align-items: center;
+    padding: 0 20px;
 }
 
 nav {
@@ -91,11 +96,18 @@ a, a:hover {
 
 /*-------------------------------------------------------*/
 /*btn styles*/
+
 .dsc-btn-page-container {
-    width: 220px;
+    width: 100%;
     display: grid;
     grid-gap: 20px;
 }
+@media (min-width: 576px) {
+    .dsc-btn-page-container {
+        width: 220px;
+    }
+}
+
 
 .dsc-btn {
     border-radius: 4px;

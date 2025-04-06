@@ -18,6 +18,8 @@
     --dsc-color-font-secondary: #0caf1d;
     --dsc-color-font-tertiary: #fff;
     --dsc-color-font-placeholder: #d9d9d9;
+
+    --dsc-color-error: #f33;
 }
 
 * {
@@ -115,10 +117,10 @@ a, a:hover {
     }
 }
 
-
 .dsc-btn {
-    border-radius: 4px;
+    width: 100%;
     height: 42px;
+    border-radius: 4px;
     font-size: 16px;
     font-weight: 700;
     display: flex;
@@ -129,6 +131,7 @@ a, a:hover {
 .dsc-btn-blue {
     background-color: var(--dsc-color-btn-primary);
     color: var(--dsc-color-btn-inverse);
+    border: none;
 }
 .dsc-btn-white {
     background-color: var(--dsc-color-btn-inverse);
@@ -192,4 +195,61 @@ a, a:hover {
 
 .dsc-search-bar input::placeholder {
     color: var(--dsc-color-font-placeholder)   ;
+}
+
+/*-------------------------------------------------------*/
+/*form styles*/
+.dsc-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dsc-form h2 {
+    font-size: 16px;
+    color: var(--dsc-color-font-primary);
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.dsc-form-controls-container {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    margin: 20px 0;
+}
+
+.dsc-form-control {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 0 20px;
+    color: var(--dsc-color-font-primary);
+    border-radius: 4px;
+    border: 1px solid var(--dsc-color-card-border);
+}
+
+.dsc-form-control:focus {
+    outline: none;
+}
+
+.dsc-form-control::placeholder {
+    color: var(--dsc-color-font-placeholder);
+}
+
+.dsc-form-error {
+    color: var(--dsc-color-error);
+    font-size: 12px;
+    padding-left: 4px;
+}
+
+.dsc-input-error {
+    border: 1px solid var(--dsc-color-error);
+}
+
+@media (min-width: 576px) {
+    .dsc-form h2 {
+        font-size: 24px;
+    }
 }

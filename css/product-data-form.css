@@ -1,0 +1,48 @@
+
+
+@import url("./styles.css");
+
+#product-data-form-section {
+    padding: 20px 0;
+}
+
+.dsc-product-data-form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dsc-form-controls-container select {
+    width: 100%;
+}
+
+.dsc-select:invalid {
+    color: var(--dsc-color-font-placeholder);
+}
+
+.dsc-select option[disabled] {
+    display: none;
+}
+
+.dsc-select option {
+    color: var(--dsc-color-font-primary);
+}
+
+.dsc-textarea {
+    resize: none;
+    height: 128px;
+    padding-top: 10px;
+}
+
+.dsc-product-data-form-buttons {
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+@media (min-width: 576px) {
+    #product-data-form-section {
+        padding: 40px 0;
+    }   
+}
